@@ -20,19 +20,19 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', source: full01, thumbnail: thumb01, caption: 'decidOR', description: 'decidOR provides a guided experience that enables users to easily make common decisions when faced with an overwhelming amount of choices. This app was built over two weeks with three fellow developers at Momentum, using Vue.js.'},
+    { id: '2', source: full02, thumbnail: thumb02, caption: 'iTunes Library Search', description: 'The iTunes Search app allows users to type in a variety of search terms (song title, artist, album, etc.) and play 30-second previous from the iTunes library. This app was built by using fetch to access the public iTunes Library API and plain JavaScript to display information received and play song samples.'},
+    { id: '3', source: full03, thumbnail: thumb03, caption: 'Freeshelf', description: 'The Freeshelf Library allows users to find a variety of publicly availably books on various programming languages and technology-related topics. Users are also able to favorite books in order to return to them later. This app was using the Django framework and SQLite database along with Bootstrap for CSS styling.'},
+    { id: '4', source: full04, thumbnail: thumb04, caption: 'Habit Tracker', description: 'The Habit Tracker app allows users to enter a habit they would like to accomplish and subsequently enter daily records and receive feedback on whether or not they achieved their goal that day. This app was created as part of a pair programming project alongside Daiane da Silva. The app uses Python/Django for backend and Tachyons for CSS syling.'},
+    { id: '5', source: full05, thumbnail: thumb05, caption: 'Stack Otterflow', description: "A 'Stack Overflow' like website for users to ask questions and leave answers about everyone's favorite furry, wet mammal. The app was created using Django, JavaScript, and JQuery with two fellow Momentum students."},
+    // { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Kyle Heidelberger - Portfolio"
+        const siteDescription = "Web Portfolio for full-stack developer Kyle Heidelberger"
 
         return (
             <Layout>
@@ -45,17 +45,17 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h2>Welcome to my portfolio!</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
+                        <p>I'm Kyle. I'm a full-stack developer in North Carolina seeking new opportunities to develop my skills and contribute to an excellent organization. I recently gratuated from the immersive development program at Momentum Learning and have developed skills with Python, Django, Vue.js. React.js, and numerous other languages, frameworks, and technologies.</p>
+                        <p>Outside of work, I enjoy walking my two dogs, playing video games, and exploring the state with my fianceé Alison.</p>
+                        {/* <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     <section id="two">
-                        <h2>Recent Work</h2>
+                        <h2>Recent Projects</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
                             source,
@@ -69,9 +69,9 @@ class HomeIndex extends React.Component {
                         </ul>
                     </section>
 
-                    <section id="three">
+                    {/* <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>Send me an e-mail if you'd like to learn more about any of my projects!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
@@ -87,24 +87,24 @@ class HomeIndex extends React.Component {
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
-                                    <li>
+                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
                                         1234 Somewhere Rd.<br />
                                         Nashville, TN 00000<br />
                                         United States
-                                    </li>
+                                    </li> 
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
+                                        315-395-3257
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:kyle.heidelberger@gmail.com">kyle.heidelberger@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
                 </div>
 
