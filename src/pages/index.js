@@ -10,14 +10,12 @@ import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'decidOR', description: 'decidOR provides a guided experience that enables users to easily make common decisions when faced with an overwhelming amount of choices. This app was built over two weeks with three fellow developers at Momentum, using Vue.js.'},
@@ -25,7 +23,6 @@ const DEFAULT_IMAGES = [
     { id: '3', source: full03, thumbnail: thumb03, caption: 'Freeshelf', description: 'The Freeshelf Library allows users to find a variety of publicly availably books on various programming languages and technology-related topics. Users are also able to favorite books in order to return to them later. This app was using the Django framework and SQLite database along with Bootstrap for CSS styling.'},
     { id: '4', source: full04, thumbnail: thumb04, caption: 'Habit Tracker', description: 'The Habit Tracker app allows users to enter a habit they would like to accomplish and subsequently enter daily records and receive feedback on whether or not they achieved their goal that day. This app was created as part of a pair programming project alongside Daiane da Silva. The app uses Python/Django for backend and Tachyons for CSS syling.'},
     { id: '5', source: full05, thumbnail: thumb05, caption: 'Stack Otterflow', description: "A 'Stack Overflow' like website for users to ask questions and leave answers about everyone's favorite furry, wet mammal. The app was created using Django, JavaScript, and JQuery with two fellow Momentum students."},
-    // { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -64,9 +61,9 @@ class HomeIndex extends React.Component {
                             description
                         }))} />
 
-                        <ul className="actions">
+                        {/* <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     {/* <section id="three">
