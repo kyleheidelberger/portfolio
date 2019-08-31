@@ -18,11 +18,11 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'decidOR', description: 'decidOR provides a guided experience that enables users to easily make common decisions when faced with an overwhelming amount of choices. This app was built over two weeks with three fellow developers at Momentum, using Vue.js.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'iTunes Library Search', description: 'The iTunes Search app allows users to type in a variety of search terms (song title, artist, album, etc.) and play 30-second previous from the iTunes library. This app was built by using fetch to access the public iTunes Library API and plain JavaScript to display information received and play song samples.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Freeshelf', description: 'The Freeshelf Library allows users to find a variety of publicly availably books on various programming languages and technology-related topics. Users are also able to favorite books in order to return to them later. This app was using the Django framework and SQLite database along with Bootstrap for CSS styling.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Habit Tracker', description: 'The Habit Tracker app allows users to enter a habit they would like to accomplish and subsequently enter daily records and receive feedback on whether or not they achieved their goal that day. This app was created as part of a pair programming project alongside Daiane da Silva. The app uses Python/Django for backend and Tachyons for CSS syling.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Stack Otterflow', description: "A 'Stack Overflow' like website for users to ask questions and leave answers about everyone's favorite furry, wet mammal. The app was created using Django, JavaScript, and JQuery with two fellow Momentum students."},
+    { id: '1', source: full01, thumbnail: thumb01, caption: 'decidOR', link: 'https://decidor.herokuapp.com', description: 'decidOR provides a guided experience that enables users to easily make common decisions when faced with an overwhelming amount of choices. This app was built over two weeks with three fellow developers at Momentum, using Vue.js.'},
+    { id: '2', source: full02, thumbnail: thumb02, caption: 'iTunes Library Search', link: 'https://github.com/kyleheidelberger/itunes-search', description: 'The iTunes Search app allows users to type in a variety of search terms (song title, artist, album, etc.) and play 30-second previous from the iTunes library. This app was built by using fetch to access the public iTunes Library API and plain JavaScript to display information received and play song samples.'},
+    { id: '3', source: full03, thumbnail: thumb03, caption: 'Freeshelf', link: 'https://freeshelf-library.herokuapp.com', description: 'The Freeshelf Library allows users to find a variety of publicly availably books on various programming languages and technology-related topics. Users are also able to favorite books in order to return to them later. This app was using the Django framework and SQLite database along with Bootstrap for CSS styling.'},
+    { id: '4', source: full04, thumbnail: thumb04, caption: 'Habit Tracker', link: 'https://github.com/kyleheidelberger/habit-tracker', description: 'The Habit Tracker app allows users to enter a habit they would like to accomplish and subsequently enter daily records and receive feedback on whether or not they achieved their goal that day. This app was created as part of a pair programming project alongside Daiane da Silva. The app uses Python/Django for backend and Tachyons for CSS syling.'},
+    { id: '5', source: full05, thumbnail: thumb05, caption: 'Stack Otterflow', link: 'https://stack-otterflow.herokuapp.com', description: "A 'Stack Overflow' like website for users to ask questions and leave answers about everyone's favorite furry, wet mammal. The app was created using Django, JavaScript, and JQuery with two fellow Momentum students."},
 ];
 
 class HomeIndex extends React.Component {
@@ -54,10 +54,11 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Projects</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, link, description }) => ({
                             source,
                             thumbnail,
                             caption,
+                            link,
                             description
                         }))} />
 
