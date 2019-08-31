@@ -32,11 +32,11 @@ class Footer extends React.Component {
                 <span className="label">Email</span>
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="/resume" className="icon fa-file-text">
                 <span className="label">Resumé</span>
               </a>
-            </li> */}
+            </li>
           </ul>
           <ul className="copyright">
             <li>&copy; Gatsby Starter Strata</li>
