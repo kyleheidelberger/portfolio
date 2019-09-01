@@ -33,7 +33,7 @@ class Footer extends React.Component {
               </a>
             </li>
             <li>
-              <a href="/resume" className="icon fa-file-text">
+              <a href="https://drive.google.com/file/d/14_2jf9rkLeQG-25_Y7Qrr17M3dLUqL-x/view?usp=sharing" target="_blank" className="icon fa-file-text">
                 <span className="label">Resumé</span>
               </a>
             </li>
