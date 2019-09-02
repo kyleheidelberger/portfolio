@@ -94,7 +94,7 @@ class HomeIndex extends React.Component {
             </p>
             <p>
               Outside of work, I enjoy walking my two dogs, playing video games,
-              and exploring the state with my fianceé Alison.
+              and exploring the state with my fianceé.
             </p>
             {/* <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
