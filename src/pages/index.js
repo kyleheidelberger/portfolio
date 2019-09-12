@@ -121,7 +121,12 @@ class HomeIndex extends React.Component {
                         </ul> */}
           </section>
 
-          {/* <section id="three">
+          <section id="three">
+            <h2>decidOR - Momentum Demo Day Presentation</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/R9IA_WizMJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          {/*<section id="three">
                         <h2>Get In Touch</h2>
                         <p>Send me an e-mail if you'd like to learn more about any of my projects!</p>
                         <div className="row">
