@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Slider from "react-slick";
+import Slider from 'react-slick'
 
 import Layout from '../components/layout'
 import SimpleSlider from '../components/SimpleSlider'
@@ -18,7 +18,6 @@ import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
-
 
 const DEFAULT_IMAGES = [
   // {
@@ -105,14 +104,43 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>decidOR</h2>
-               <SimpleSlider />
-
+            <a href="https://decidor.herokuapp.com" target="_blank"><SimpleSlider /></a>
+            <br />
+            <br />
+            <h3>About the App</h3>
+            <p>
+            <a href="https://decidor.herokuapp.com" target="_blank">decidOR</a> provides a guided experience that enables users to easily
+              make a variety of common decisions when faced with an overwhelming
+              amount of choices. Our application simplifies this process by
+              presenting two options at a time, in order for the user to reach
+              an ultimate decision.
+            </p>
+            <h3>Creating the App</h3>
+            <p>
+              This app was built over the course of two weeks along with three
+              fellow developers: 
+              <a href="https://github.com/bennykoval"> Benny Koval</a>, 
+              <a href="https://github.com/dwcope3"> Daniel Cope</a>, and 
+              <a href="https://github.com/seanthony13"> Sarah Anthony</a>. The
+              app utilizes various technologies, including Django/Python for
+              backend, a Postgresql database, Vue.js/JavaScript for frontend and
+              primary functionality, Sassy CSS for styling and responsive mobile
+              design, Axios for API request, Amazon Web Services for image
+              hosting, and more.
+            </p>
             <h3>Momentum Demo Day Presentation</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/R9IA_WizMJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/R9IA_WizMJI"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </section>
 
           <section id="three">
-            <h2>Recent Projects</h2>
+            <h2>Other Recent Projects</h2>
 
             <Gallery
               images={DEFAULT_IMAGES.map(

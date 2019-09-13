@@ -2,6 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 
 import full01 from '../assets/images/fulls/01.jpg'
+import form from '../assets/images/fulls/decidor_form.png'
+import choices from '../assets/images/fulls/choices.png'
+import final from '../assets/images/fulls/final.png'
 
 
 class SimpleSlider extends React.Component {
@@ -16,23 +19,20 @@ class SimpleSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          {/* <h3>1</h3> */}
           <img src={full01}></img>
         </div>
         <div>
-          <h3>2</h3>
+          {/* <h3>2</h3> */}
+          <img src={form}></img>
         </div>
         <div>
-          <h3>3</h3>
+          {/* <h3>3</h3> */}
+          <img src={choices}></img>
         </div>
         <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+          {/* <h3>4</h3> */}
+          <img src={final}></img>
         </div>
       </Slider>
     );
