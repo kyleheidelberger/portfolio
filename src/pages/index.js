@@ -104,7 +104,7 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>decidOR</h2>
-            <a href="https://decidor.herokuapp.com" target="_blank"><SimpleSlider /></a>
+            <SimpleSlider />
             <br />
             <br />
             <h3>About the App</h3>
