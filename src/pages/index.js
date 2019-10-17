@@ -12,12 +12,14 @@ import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
+import thumb06 from '../assets/images/thumbs/06.jpg'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
+import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
   // {
@@ -65,6 +67,15 @@ const DEFAULT_IMAGES = [
     description:
       "A 'Stack Overflow' like website for users to ask questions and leave answers about everyone's favorite furry, wet mammal. The app was created using Django, JavaScript, and JQuery with two fellow Momentum students.",
   },
+  {
+    id: '5',
+    source: full06,
+    thumbnail: thumb06,
+    caption: 'Pig Game',
+    link: 'https://play-pig.surge.sh',
+    description:
+      "A simple version of the game 'Pig' built in vanilla JavaScript as part of a Udemy tutorial.",
+  },
 ]
 
 class HomeIndex extends React.Component {
@@ -95,7 +106,7 @@ class HomeIndex extends React.Component {
             </p>
             <p>
               Outside of work, I enjoy walking my two dogs, playing video games,
-              and exploring the state with my fianceé.
+              and exploring the state with my amazing wife.
             </p>
             {/* <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
